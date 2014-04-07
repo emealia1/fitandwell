@@ -187,7 +187,11 @@ h2{
 		display: none;
 	}
 
+	textarea{
+		width: 100%;
 	}
+
+}
 
 @media only screen and (min-width: 1024px) and (max-width: 1136px){
 	.img-size{
@@ -243,6 +247,10 @@ h2{
 	}
 	a.button{
 		display: none;
+	}
+
+	textarea{
+		width: 100%;
 	}
 
 }
