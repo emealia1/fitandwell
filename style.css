@@ -116,7 +116,7 @@ h2{
   		display: block;
   		margin: 1em;
   		float: right; 
-  		height: 3em;
+  		height: 2em;
   		width: 40%; 
   		right: 0px;
 		top: 0px;
@@ -154,7 +154,10 @@ h2{
 	}
 
 	body{
-		font-size: 70%;
+		font-size: 60%;
+	}
+	a.button{
+		display: none;
 	}
 
 	}
@@ -174,7 +177,7 @@ h2{
   		display: block;
   		margin: 1em;
   		float: right; 
-  		height: 3em;
+  		height: 2em;
   		width: 40%; 
   		right: 0px;
 		top: 0px;
@@ -210,6 +213,9 @@ h2{
 
 	body{
 		font-size: 90%;
+	}
+	a.button{
+		display: none;
 	}
 
 }
