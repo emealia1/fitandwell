@@ -26,7 +26,7 @@ nav select{
 	position: relative;
 }
 
-.hght-200{
+.hght-header{
 	height: 252px;
 }
 
@@ -85,20 +85,34 @@ h2{
 	font-size: 1.5em;
 }
 .img-section{
-	background-size: cover;
 	height: 40%;
 	width: 100%;
 	margin-top: -1em;
 }
 
 #img-nutrition{
-	background: url(images/food-Healthy-Eating.jpg) no-repeat center center;
+	background: url(images/food-Healthy-Eating.jpg) no-repeat center center fixed;
+	width: 100%;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 #img-exercise{
-	background: url(images/exercise.jpg) no-repeat center center;
+	background: url(images/exercise.jpg) no-repeat center center fixed;
+	width: 100%;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 #img-stress{
-	background: url(images/killer_stress.jpg) no-repeat center center;	
+	background: url(images/killer_stress.jpg) no-repeat center center fixed;
+	width: 100%;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;	
 }
 .button{
 	padding: .5em;
@@ -162,16 +176,8 @@ h2{
   		margin-top: 6em;
   	}
 
-	.hght-200{
+	.hght-header{
 		height: 70%;
-	}
-	
-	.first-section{
-		background: url(images/healthy-body.jpg) no-repeat center center;
-		background-size: cover;
-		height: 40%;
-		width: 100%;
-		margin-top: -1em;
 	}
 
 	body{
@@ -220,7 +226,7 @@ h2{
   		margin-top: 6em;
   	}
 
-	.hght-200{
+	.hght-header{
 		height: 45%;
 	}
 	

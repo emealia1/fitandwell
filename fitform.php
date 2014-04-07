@@ -1,6 +1,17 @@
 <doctype html>
 <html>
-	<head></head>
+	<head>
+		<title>Fit &amp; Well Form</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<style>
+		h1{
+			font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+			color: #259014;
+			font-size: 1.5em;
+		}
+	</style>
 	<body>
 	<?php    
 		if (mail($to, $subject, $message))
