@@ -14,17 +14,16 @@
 			$email = $_POST["email"];
 			$phone = $_POST["phone"];
 			$message = $_POST["message"];
+
+			$to = "emealia.hollis@ksuwdc.com";
+			$subject = "New Message from Fit & Well";
+			$message = "<?php echo $email?>\n<?php echo $fname?>\n<?php echo $lname?>\n<?php echo $phone?>\n<?php echo $message?>";
+
+			mail($to, $subject, $message);
 		?>
 
 		<h1>Thank you for your submission</h1>
 
 
-		<?php
-			$to = "emealia.hollis@ksuwdc.com";
-			$subject = "New Message from Fit &amp; Well";
-			$message = "<?php echo $email?>\n<?php echo $fname?>\n<?php echo $lname?>\n<?php echo $phone?>\n<?php echo $message?>";
-
-			mail($to, $subject, $message);
-			?>
 	</body>
 </html>
