@@ -5,51 +5,31 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
-		<!--Using jQuery and jQuery UI for display effects-->
-    	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    	<!--Using the hamburger menu display code-->
-    	<script src="hamburger.js"></script>
 
 		<style>
-			.hover-blue a:hover{
-				color: blue;
-				font-weight: bold;
+
+			a{
+				text-decoration: none;
+				color: inherit;
 			}
 
-			header{
-				position: fixed;
+			.bkg-green{
+				background: #259014;
+				background-size: cover;
 				width: 100%;
-				z-index: 1;
+				color: #fff;
+			}
+			.float-right{
+				float: right;
 			}
 
-			#hamburger{
-				border: 1px solid #000;
-				border-radius: 3px;
-				display: block;
-				height: 24px;
-				width: 25px;
-				padding: 3px 4px 3px;
-				position: relative;
-				background: #d6d6d6;
+			nav a{
+				margin: .25em;
 			}
 
-			#hamburger div{
-				background-color: #fff;
-				border:1px solid #eee;
-				border-radius: 2px;
-				height: 2px;
-				margin-top: 3px;
-				width: 90%;
-			}
-
-			#nav{
-				left: 0px;
-				top: 0px;
-				position: fixed;
-				z-index: 0;
-				width:70%;
-				display: none;
+			nav a:hover{
+				color: #259014;
+				font-weight: bold;
 			}
 		</style>
 	</head>
@@ -60,127 +40,124 @@
 	http://www.mayoclinic.org/
 	http://www.helpguide.org/
 	 -->
-	 	<header>
+	 	<!-- <header>
 			<div id="hamburger">
 				<div></div>
 				<div></div>
 				<div></div>
 			</div>
 		</header>
-
-	 	<section>
-		<a name="home"></a>
-		<img src="images/logo.png" alt="Fit &amp; Well Logo">
-
-		<ul id="nav">
-			<li class="hover-blue"><a href="#nutrition">Nutrition</a></li>
-			<li class="hover-blue"><a href="#exercise">Exercise</a></li>
-			<li class="hover-blue"><a href="#wellness">Wellness &amp; Stress Management</a></li>
-			<li class="hover-blue"><a href="#contact">Contact Us</a></li>
-		</ul>
+ -->
+	 	<section id="top-static">
+			<a name="home"></a>
+			<img src="images/fit-logo.png" alt="Fit &amp; Well Logo">
+			<div class="float-right">
+				<nav class="mrgn-8 float-left">
+					<a href="#nutrition">Nutrition</a>
+					<a href="#exercise">Exercise</a>
+					<a href="#stress">Stress Management</a>
+					<a href="#contact">Contact Us</a>
+				</nav>
+			</div>
 		</section>
 		<section id="content">
-			<section>
-				<img src="/">
-				<h1>Want to live a healthy lifestyle and leave your couch potato days behind?</h1>
-				<p>Fit &amp; Well is here to help you get started on the right track. We have broken it down into a few simple sections that will significantly improve your health. So take some time to explore and begin your journey to a <span>Fit &amp; Well</span> lifestyle</p>
+			<section class="hght-200 mrgn-top dsply-blk">
+				<img src="images/healthy-body.jpg" class="img-size float-left">
+					<div class="mrgn-8 hght-252">
+						<h1>Want to live a healthy lifestyle?</h1>
+						<p class="fnt-2">Fit &amp; Well is here to help you get started on the right track. We have broken it down into a few simple sections that will significantly improve your health. So take some time to explore and begin your journey to a <span class="italic">Fit &amp; Well</span> lifestyle</p>
+					</div>
 			</section>
+				
 			<div class="line-separator"></div>
 
-			<section>
-				<div>
+			<section class="bkg-green hght-300">
+				<div class="dsply-blk first-section">
 				<a name="nutrition"></a>
-				<img src="/">
-				<h2>Nutrition &amp; Diet</h2>
-				<p>While it's true that nutrition and diet is evolving, there are some nutrition basics you can keep in mind. By knowing these basics, you'll be better equipped to continue and thrive.</p>
+					<div class="section-text">
+						<h2>Nutrition &amp; Diet</h2>
+						<p>While it's true that nutrition and diet is evolving, there are some nutrition basics you can keep in mind. By knowing these basics, you'll be better equipped to continue and thrive.</p>
+					</div>
 				</div>
 
-				<div>
-				<img src="/">
-				<h2>Healthy menus and shopping</h2>
-				<ul>
-					<li>Your shopping strategies should focus on fresh and unprocessed foods. That means spending more time in the produce section, where you can stock up on fruits and vegetables.</li>
-					<li>Keep an eye out too for whole grains and low-fat dairy products.</li>
-					<li>Also be sure to check out the farmers market during the growing season to see what local produce is available.</li>
-				</ul>
+				<div class="dsply-blk mrgn-8">
+					<h2>Healthy menus and shopping</h2>
+					<ul>
+						<li>Your shopping strategies should focus on fresh and unprocessed foods. That means spending more time in the produce section, where you can stock up on fruits and vegetables.</li>
+						<li>Keep an eye out too for whole grains and low-fat dairy products.</li>
+					</ul>
 				</div>
 
-				<div>
-				<img src="/">
-				<h2>Nutritional supplements</h2>
-				<ul>
-					<li>Nutritional supplements are meant to complement a healthy diet, not replace it.</li>
-					<li>If you're generally healthy and eat a wide variety of foods, you probably don't need nutritional supplements. In certain cases, however, fortified foods and dietary supplements may be useful in providing one or more nutrients.</li>
-					<li>You may also want to consider a nutritional supplement if you don't eat enough healthy foods or don't eat a healthy variety of foods.</li>
-				</ul>
-				<a href="#home">Home</a>
+				<div class="dsply-blk mrgn-8">
+					<h2>Nutritional supplements</h2>
+					<ul>
+						<li>Nutritional supplements are meant to complement a healthy diet, not replace it.</li>
+						<li>If you're generally healthy and eat a wide variety of foods, you probably don't need nutritional supplements. In certain cases, however, fortified foods and dietary supplements may be useful in providing one or more nutrients.</li>
+					</ul>
+					<a href="#home" class="button button-wht">Home</a>
 				</div>
 			</section>
 			<div class="line-separator"></div>
 
-			<section>
-				<div>
-					<a name="exercise"></a>
-					<img src="/">
-					<h2>Exercise &amp; a Healthy Lifestyle</h2>
-					<p>Exercise is one of the easiest and most effective ways of improving both your physical and mental health. By focusing on activities you enjoy and tailoring a regular exercise routine to your needs, you can experience health benefits and improve your own life.</p>
+			<section class="hght-300">
+				<div class="dsply-blk first-section">
+				<a name="exercise"></a>
+					<div class="section-text">
+						<h2>Exercise &amp; a Healthy Lifestyle</h2>
+						<p>Exercise is one of the easiest and most effective ways of improving both your physical and mental health. By focusing on activities you enjoy and tailoring a regular exercise routine to your needs, you can experience health benefits and improve your own life.</p>
+					</div>
 				</div>
 
-				<div>
-					<img src="/">
+				<div class="dsply-blk mrgn-8">
 					<h2>Types of Exercise</h2>
 					<ul>
 						<li>Aerobic activities like running, cycling, and swimming strengthen your heart and increase your endurance.</li>
 						<li>Strength training like weight lifting or resistance training builds muscle and bone mass, improves balance and prevents falls. It’s one of the best counters to frailty in old age.</li>
-						<li>Flexibility exercises like stretching and yoga help prevent injury, enhance range of motion, reduce stiffness, and limit aches and pains.</li>
 					</ul>
 				</div>
 
-				<div>
-					<img src="/">
+				<div class="dsply-blk mrgn-8">
 					<h2>Easy Exercise Tips</h2>
 					<ul>
 						<li>Move more in your daily life. Look at your daily routine and consider ways to include activity here and there. Even small activities can add up over a day.</li>
 						<li>Focus on activities you enjoy. You’ll find it easier to stick with an exercise program that’s built around those activities.</li>
-						<li>Stay motivated by shaking things up and trying something new. Add other activities to your exercise program, or alter the way you pursue the exercises that have worked so far.</li>
 					</ul>
-					<a href="#home">Home</a>
+					<a href="#home" class="button button-grn">Home</a>
+					<a href="#nutrition" class="button button-grn">Nutrition</a>
 				</div>
 			</section>
 			<div class="line-separator"></div>
 
-			<section>
-				<div>
-				<a name="wellness"></a>
-				<img src="/">
-				<h2>Wellness &amp; Stress Management</h2>
-				<p>Stress is a normal psychological and physical reaction to the ever increasing demands of life. Stress management gives you a range of tools to reset your internal alarm system. Don't wait until stress has a negative impact on your health, relationships or quality of life. Start practicing a range of stress management techniques today.</p>
+			<section class="bkg-green hght-300">
+				<div class="dsply-blk first-section">
+				<a name="stress"></a>
+					<div class="section-text">
+						<h2>Wellness &amp; Stress Management</h2>
+						<p>Stress is a normal psychological and physical reaction to the ever increasing demands of life. Stress management gives you a range of tools to reset your internal alarm system. Start practicing a range of stress management techniques today.</p>
+					</div>
 				</div>
 
-				<div>
-				<img src="/">
-				<h2>Stress Relief</h2>
-				<ul>
-					<li>The first step in successful stress relief is deciding to make a change in how you manage stress.</li>
-					<li>The next step is identifying your stress triggers.</li>
-					<li>Once you've identified your stress triggers, you can start thinking about strategies for dealing with them. Sometimes the solution may be as easy as turning off the TV when the evening news is too distressing.</li>
-				</ul>
+				<div class="dsply-blk mrgn-8">
+					<h2>Stress Relief</h2>
+					<ul>
+						<li>The first step in successful stress relief is deciding to make a change in how you manage stress. The next step is identifying your stress triggers.</li>
+						<li>Once you've identified your stress triggers, you can start thinking about strategies for dealing with them. Sometimes the solution may be as easy as turning off the TV when the evening news is too distressing.</li>
+					</ul>
 				</div>
 				
-				<div>
-				<img src="/">
-				<h2>Relaxation Techniques</h2>
-				<ul>
-					<li>Relaxation is invaluable for maintaining your health and well-being, and repairing the toll that stress takes on your mind and body.</li>
-					<li>Common relaxation techniques include meditation, mindfulness, tai chi and yoga. For a more active approach, walking outdoors or participating in a sporting sports activity can be relaxing.</li>
-					<li>Which technique you choose doesn't matter. What matters is that you select a technique that works for you and you practice achieving relaxation regularly.</li>
-				</ul>
-				<a href="#home">Home</a>
+				<div class="dsply-blk mrgn-8">
+					<h2>Relaxation Techniques</h2>
+					<ul>
+						<li>Relaxation is invaluable for maintaining your health and well-being, and repairing the toll that stress takes on your mind and body.</li>
+						<li>Common relaxation techniques include meditation, mindfulness, tai chi and yoga. For a more active approach, walking outdoors or participating in a sporting sports activity can be relaxing.</li>
+					</ul>
+				<a href="#home" class="button button-wht">Home</a>
+				<a href="#exercise" class="button button-wht">Exercise</a>
 				</div>
 			</section>
 			<div class="line-separator"></div>
 
-			<section id="form">
+			<section id="form" class="hght-200 mrgn-8">
 				<a name="contact"></a>
 				<h2>Contact Us</h2>
 				<form action="form.php" method="GET">
@@ -188,14 +165,40 @@
 				<input type="text" name="lname" placeholder="Last Name*" required><br>
 				<input type="email" name="email" placeholder="Email*" required>
 				<input type="number" name="phone" pattern="[0-9] {10}" placeholder="Phone"><br>
-				<span>*Indicates a required field</span>
-				<input type="submit" value="Submit">
+				<span>*Indicates a required field</span><br>
+				<input type="submit" value="Submit" class="button button-grn">
 				</form>
 
-				<a href="#home">Home</a>
+				<a href="#home" class="button button-grn">Home</a>
+				<a href="#stress" class="button button-grn">Stress Management</a>
 
 			</section>
 		</section>
+		<script type="text/javascript" src="jquery-1.10.2.js"></script>
+		<script>
+			// Create the dropdown base
+			$("<select />").appendTo("nav");
+
+			// Create default option "Go to..."
+			$("<option />", {
+			   "selected": "selected",
+			   "value"   : "",
+			   "text"    : "Go to..."
+			}).appendTo("nav select");
+
+			// Populate dropdown with menu items
+			$("nav a").each(function() {
+			 var el = $(this);
+			 $("<option />", {
+			     "value"   : el.attr("href"),
+			     "text"    : el.text()
+			 }).appendTo("nav select");
+			});
+
+			$("nav select").change(function() {
+		  	window.location = $(this).find("option:selected").val();
+			});
+		</script>
 	</body>
 
 </html>
