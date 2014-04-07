@@ -116,7 +116,7 @@ h2{
   		display: block;
   		margin: 1em;
   		float: right; 
-  		height: 4em;
+  		height: 3em;
   		width: 40%; 
   		right: 0px;
 		top: 0px;
@@ -148,13 +148,13 @@ h2{
 	.first-section{
 		background: url(images/healthy-body.jpg) no-repeat center center;
 		background-size: cover;
-		height: 30%;
+		height: 40%;
 		width: 100%;
 		margin-top: -1em;
 	}
 
 	body{
-		font-size: 80%;
+		font-size: 70%;
 	}
 
 	}
@@ -174,7 +174,7 @@ h2{
   		display: block;
   		margin: 1em;
   		float: right; 
-  		height: 4em;
+  		height: 3em;
   		width: 40%; 
   		right: 0px;
 		top: 0px;
