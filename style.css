@@ -47,14 +47,26 @@ li{
 }
 .mrgn-8{
 	margin: 1em;
+	padding-bottom: .5em;
 }
 
 .section-text{
 	position: relative;
 	top: 1em;
 	left: 1em;
-	width: 90%;
+	right: 1em;
+	width: 85%;
+	padding: 1em;
+	background: #259014;
+	opacity: .7;
+	filter: alpha(opacity=70);
+
 }
+	.section-text p, .section-text h2{
+		color: #fff;
+		font-weight:bold;
+	}
+	
 
 h1{
 	font-size: 2.5em;
@@ -72,12 +84,21 @@ h1{
 h2{
 	font-size: 1.5em;
 }
-.first-section{
-	background: url(images/healthy-body.jpg) no-repeat center center;
+.img-section{
 	background-size: cover;
 	height: 40%;
 	width: 100%;
 	margin-top: -1em;
+}
+
+#img-nutrition{
+	background: url(images/food-Healthy-Eating.jpg) no-repeat center center;
+}
+#img-exercise{
+	background: url(images/exercise.jpg) no-repeat center center;
+}
+#img-stress{
+	background: url(images/killer_stress.jpg) no-repeat center center;	
 }
 .button{
 	padding: .5em;

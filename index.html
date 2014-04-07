@@ -40,14 +40,7 @@
 	http://www.mayoclinic.org/
 	http://www.helpguide.org/
 	 -->
-	 	<!-- <header>
-			<div id="hamburger">
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-		</header>
- -->
+
 	 	<section id="top-static">
 			<a name="home"></a>
 			<img src="images/fit-logo.png" alt="Fit &amp; Well Logo" id="logo">
@@ -70,10 +63,9 @@
 					</div>
 			</section>
 				
-			<div class="line-separator"></div>
 
 			<section class="bkg-green hght-300">
-				<div class="dsply-blk first-section">
+				<div class="dsply-blk img-section" id="img-nutrition">
 				<a name="nutrition"></a>
 					<div class="section-text">
 						<h2>Nutrition &amp; Diet</h2>
@@ -98,10 +90,9 @@
 					<a href="#home" class="button button-wht">Home</a>
 				</div>
 			</section>
-			<div class="line-separator"></div>
 
 			<section class="hght-300">
-				<div class="dsply-blk first-section">
+				<div class="dsply-blk img-section" id="img-exercise">
 				<a name="exercise"></a>
 					<div class="section-text">
 						<h2>Exercise &amp; a Healthy Lifestyle</h2>
@@ -127,10 +118,9 @@
 					<a href="#nutrition" class="button button-grn">Nutrition</a>
 				</div>
 			</section>
-			<div class="line-separator"></div>
 
 			<section class="bkg-green hght-300">
-				<div class="dsply-blk first-section">
+				<div class="dsply-blk img-section" id="img-stress">
 				<a name="stress"></a>
 					<div class="section-text">
 						<h2>Wellness &amp; Stress Management</h2>
@@ -156,16 +146,17 @@
 				<a href="#exercise" class="button button-wht">Exercise</a>
 				</div>
 			</section>
-			<div class="line-separator"></div>
 
 			<section id="form" class="hght-200 mrgn-8">
 				<a name="contact"></a>
 				<h2>Contact Us</h2>
-				<form action="form.php" method="GET">
+				<form action="http://ehollis.ksuwdc.com/fitform.php" method="GET">
 				<input type="text" name="fname" placeholder="First Name*" required>
 				<input type="text" name="lname" placeholder="Last Name*" required><br>
 				<input type="email" name="email" placeholder="Email*" required>
 				<input type="number" name="phone" pattern="[0-9] {10}" placeholder="Phone"><br>
+ 				<textarea placeholder="Type Message Here" rows="5" cols="40" name="message"></textarea><br>
+
 				<span>*Indicates a required field</span><br>
 				<input type="submit" value="Submit" class="button button-grn">
 				</form>
