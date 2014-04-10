@@ -142,6 +142,7 @@ h2{
 
 	#logo{
 		height: 80%;
+		content: url(fitlogo.mobile.png);
 	}
   	nav a { 
 		display: none; 
@@ -191,7 +192,15 @@ h2{
 		width: 100%;
 	}
 
-}
+	#img-nutrition{
+		background: url(images/food-Healthy-Eating.mobile.jpg) no-repeat center center fixed;	
+	}
+	#img-exercise{
+		background: url(images/exercise.mobile.jpg) no-repeat center center fixed;
+	}
+	#img-stress{
+		background: url(images/killer_stress.mobile.jpg) no-repeat center center fixed;
+	}
 
 @media only screen and (min-width: 1024px) and (max-width: 1136px){
 	.img-size{
@@ -199,6 +208,7 @@ h2{
   	}
 	#logo{
 		height: 80%;
+		content: url(fitlogo.mobile.png);
 	}
   	nav a { 
 		display: none; 
@@ -251,6 +261,16 @@ h2{
 
 	textarea{
 		width: 100%;
+	}
+
+	#img-nutrition{
+		background: url(images/food-Healthy-Eating.mobile.jpg) no-repeat center center fixed;	
+	}
+	#img-exercise{
+		background: url(images/exercise.mobile.jpg) no-repeat center center fixed;
+	}
+	#img-stress{
+		background: url(images/killer_stress.mobile.jpg) no-repeat center center fixed;
 	}
 
 }
