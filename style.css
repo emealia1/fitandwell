@@ -193,7 +193,7 @@ h2{
 	}
 
 	#img-nutrition{
-		background: url(images/food-Healthy-Eating.mobile.jpg) no-repeat center center fixed;	
+		background: url(images/food-Healthy-Eating.mobile.jpg) no-repeat center center fixed;
 	}
 	#img-exercise{
 		background: url(images/exercise.mobile.jpg) no-repeat center center fixed;
@@ -244,14 +244,6 @@ h2{
 		height: 45%;
 	}
 	
-	.first-section{
-		background: url(images/healthy-body.jpg) no-repeat center center;
-		background-size: cover;
-		height: 30%;
-		width: 100%;
-		margin-top: -1em;
-	}
-
 	body{
 		font-size: 90%;
 	}
@@ -264,7 +256,7 @@ h2{
 	}
 
 	#img-nutrition{
-		background: url(images/food-Healthy-Eating.mobile.jpg) no-repeat center center fixed;	
+		background: url(images/food-Healthy-Eating.mobile.jpg) no-repeat center center fixed;
 	}
 	#img-exercise{
 		background: url(images/exercise.mobile.jpg) no-repeat center center fixed;
