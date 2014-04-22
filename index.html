@@ -11,6 +11,8 @@
 			a{
 				text-decoration: none;
 				color: inherit;
+				border-radius: .25em;
+				padding: .5em;
 			}
 
 			.bkg-green{
@@ -18,19 +20,37 @@
 				background-size: cover;
 				width: 100%;
 				color: #fff;
+
 			}
+
+			.bkg-white{
+				background: #fff;
+				background-size: cover;
+				width: 100%;
+				color: #000;
+				margin-top: -1em;
+			}
+
 			.float-right{
 				float: right;
 			}
 
 			nav a{
-				margin: .25em;
+				margin: .5em .25em;
 			}
 
 			nav a:hover{
-				color: #259014;
-				text-shadow: 0px 0px 10px #175a0c;
+				color: #fff;
+				border-radius: .25em;
+				padding: .5em;
+				background: #259014;
 			}
+
+			.dsply-inline{
+				display: inline;
+				margin: -1em;
+				position: absolute;	
+			}			
 		</style>
 	</head>
 
@@ -40,10 +60,9 @@
 	http://www.mayoclinic.org/
 	http://www.helpguide.org/
 	 -->
-
+		<a name="home" class="dsply-inline"></a>
 	 	<section id="top-static">
-			<a name="home"></a>
-			<img src="images/fitlogo.png" alt="Fit &amp; Well Logo" id="logo">
+			<div id="logo" alt="Fit &amp; Well Logo"></div>
 			<div class="float-right">
 				<nav class="mrgn-8 float-left">
 					<a href="#home">Home</a>
@@ -55,9 +74,16 @@
 			</div>
 		</section>
 		<section id="content">
-			<section class="hght-header mrgn-top dsply-blk">
-				<img src="images/healthy-body-250.jpg" class="img-size float-left">
-					<div class="mrgn-8">
+			<section id="topsection">
+				<!-- <img src="images/healthy-body-250.jpg" class="img-size float-left"> -->
+				<p>Window size: <span id="size"></span> pixels</p>
+					<script>
+					window.onresize = function() {
+						document.getElementById("size").innerHTML = window.innerWidth;
+					};
+					</script>
+				<img src="images/healthy-body.jpg" id="topimg">
+					<div class="mrgn-8 float-left" id="topinfo">
 						<h1>Want to live a healthy lifestyle?</h1>
 						<p class="fnt-2">Fit &amp; Well is here to help you get started on the right track. We have broken it down into a few simple sections that will significantly improve your health. So take some time to explore and begin your journey to a <span class="italic">Fit &amp; Well</span> lifestyle</p>
 					</div>
@@ -65,8 +91,8 @@
 				
 
 			<section class="bkg-green">
+				<a name="nutrition" class="dsply-inline"></a>
 				<div class="dsply-blk img-section" id="img-nutrition">
-				<a name="nutrition"></a>
 					<div class="section-text">
 						<h2>Nutrition &amp; Diet</h2>
 						<p>While it's true that nutrition and diet is evolving, there are some nutrition basics you can keep in mind. By knowing these basics, you'll be better equipped to continue and thrive.</p>
@@ -88,12 +114,12 @@
 						<li>If you're generally healthy and eat a wide variety of foods, you probably don't need nutritional supplements. In certain cases, however, fortified foods and dietary supplements may be useful in providing one or more nutrients.</li>
 					</ul>
 					<a href="#home" class="button button-wht">Home</a>
-				</div>
+				</div>	
 			</section>
 
-			<section>
+			<section class="bkg-white">
+				<a name="exercise" class="dsply-inline"></a>
 				<div class="dsply-blk img-section" id="img-exercise">
-				<a name="exercise"></a>
 					<div class="section-text">
 						<h2>Exercise &amp; a Healthy Lifestyle</h2>
 						<p>Exercise is one of the easiest and most effective ways of improving both your physical and mental health. By focusing on activities you enjoy and tailoring a regular exercise routine to your needs, you can experience health benefits and improve your own life.</p>
@@ -116,12 +142,13 @@
 					</ul>
 					<a href="#home" class="button button-grn">Home</a>
 					<a href="#nutrition" class="button button-grn">Nutrition</a>
-				</div>
+				</div>	
+				
 			</section>
 
 			<section class="bkg-green">
+				<a name="stress" class="dsply-inline"></a>
 				<div class="dsply-blk img-section" id="img-stress">
-				<a name="stress"></a>
 					<div class="section-text">
 						<h2>Wellness &amp; Stress Management</h2>
 						<p>Stress is a normal psychological and physical reaction to the ever increasing demands of life. Stress management gives you a range of tools to reset your internal alarm system. Start practicing a range of stress management techniques today.</p>
@@ -142,23 +169,24 @@
 						<li>Relaxation is invaluable for maintaining your health and well-being, and repairing the toll that stress takes on your mind and body.</li>
 						<li>Common relaxation techniques include meditation, mindfulness, tai chi and yoga. For a more active approach, walking outdoors or participating in a sporting sports activity can be relaxing.</li>
 					</ul>
-				<a href="#home" class="button button-wht">Home</a>
-				<a href="#exercise" class="button button-wht">Exercise</a>
-				</div>
+					<a href="#home" class="button button-wht">Home</a>
+					<a href="#exercise" class="button button-wht">Exercise</a>
+				</div>	
+				
 			</section>
 
 			<section id="form" class="hght-header mrgn-8">
-				<a name="contact"></a>
+				<a name="contact" class="dsply-inline"></a>
 				<h2>Contact Us</h2>
 				<form action="http://ehollis.ksuwdc.com/fitform.php" method="GET">
-				<input type="text" name="fname" placeholder="First Name*" required>
-				<input type="text" name="lname" placeholder="Last Name*" required><br>
-				<input type="email" name="email" placeholder="Email*" required>
-				<input type="number" name="phone" pattern="[0-9] {10}" placeholder="Phone"><br>
- 				<textarea placeholder="Type Message Here" rows="5" cols="40" name="message"></textarea><br>
+					<input type="text" name="fname" placeholder="First Name*" required>
+					<input type="text" name="lname" placeholder="Last Name*" required><br>
+					<input type="email" name="email" placeholder="Email*" required>
+					<input type="number" name="phone" pattern="[0-9] {10}" placeholder="Phone"><br>
+	 				<textarea placeholder="Type Message Here" rows="5" cols="40" name="message"></textarea><br>
 
-				<span>*Indicates a required field</span><br>
-				<input type="submit" value="Submit" class="button button-grn">
+					<span>*Indicates a required field</span><br>
+					<input type="submit" value="Submit" class="button button-grn">
 				</form>
 
 				<a href="#home" class="button button-grn">Home</a>
@@ -189,6 +217,22 @@
 
 			$("nav select").change(function() {
 		  	window.location = $(this).find("option:selected").val();
+			});
+
+			// Smooth page scroll to an anchor
+			$(function() {
+			  $('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
 			});
 		</script>
 	</body>
