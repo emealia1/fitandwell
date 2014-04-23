@@ -5,6 +5,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="images/fit-favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/fit-favicon.ico" type="image/x-icon">
 
 		<style>
 
@@ -13,6 +15,16 @@
 				color: inherit;
 				border-radius: .25em;
 				padding: .5em;
+			}
+
+			#logo{
+				margin: 1em;
+				position: relative;
+				background: url(images/fitlogo.png) no-repeat;
+				background-size: 100% 100%;
+				width: 288px;
+				height: 72px;
+				display: inline-block;
 			}
 
 			.bkg-green{
@@ -33,6 +45,7 @@
 
 			.float-right{
 				float: right;
+				display: inline-block;
 			}
 
 			nav a{
@@ -75,18 +88,19 @@
 		</section>
 		<section id="content">
 			<section id="topsection">
-				<!-- <img src="images/healthy-body-250.jpg" class="img-size float-left"> -->
 				<p>Window size: <span id="size"></span> pixels</p>
 					<script>
 					window.onresize = function() {
 						document.getElementById("size").innerHTML = window.innerWidth;
 					};
 					</script>
-				<img src="images/healthy-body.jpg" id="topimg">
-					<div class="mrgn-8 float-left" id="topinfo">
+				<div id="top-wrapper">	
+					<img src="images/healthy-woman-main.jpg" id="topimg">
+					<div id="topinfo">
 						<h1>Want to live a healthy lifestyle?</h1>
 						<p class="fnt-2">Fit &amp; Well is here to help you get started on the right track. We have broken it down into a few simple sections that will significantly improve your health. So take some time to explore and begin your journey to a <span class="italic">Fit &amp; Well</span> lifestyle</p>
 					</div>
+				</div>	
 			</section>
 				
 
