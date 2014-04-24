@@ -160,7 +160,7 @@ h2{
 		background: url(images/fit-logo-wht.png) no-repeat;
 		background-size: auto 85%;
 		height: 90%;
-		width: 90%;
+		width: 75%;
 		margin: 0 1em;
 	}
 
@@ -192,7 +192,7 @@ h2{
 
   	#topsection{
   		margin-top: 7%;
-  		height: 47em;
+  		height: 55em;
   	}
 
   	#topinfo{
@@ -216,17 +216,17 @@ h2{
 	}
 
 	.img-section{
-		height: 25%;
+		height: 30%;
 	}
 
 	#img-nutrition{
-		background: url(images/food-nutrition.mobile.jpg) no-repeat center center fixed;
+		background: url(images/food-nutrition.mobile.jpg) no-repeat center center;
 	}
 	#img-exercise{
-		background: url(images/exercise-bike.mobile.jpg) no-repeat center center fixed;
+		background: url(images/exercise-bike.mobile.jpg) no-repeat center center;
 	}
 	#img-stress{
-		background: url(images/yoga.mobile.jpg) no-repeat center center fixed;
+		background: url(images/yoga.mobile.jpg) no-repeat center center;
 	}
 }	
 
@@ -236,7 +236,7 @@ h2{
 		background: url(images/fit-logo-wht.png) no-repeat;
 		background-size: auto 95%;
 		height: 90%;
-		width: 90%;
+		width: 75%;
 		margin: 0 1em;
 	}
 
