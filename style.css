@@ -291,13 +291,13 @@ h2{
 	}
 
 	#img-nutrition{
-		background: url(images/food-nutrition.tablet.jpg) no-repeat center center fixed;
+		background: url(images/food-nutrition.tablet.jpg) no-repeat center center;
 	}
 	#img-exercise{
-		background: url(images/exercise-bike.tablet.jpg) no-repeat center center fixed;
+		background: url(images/exercise-bike.tablet.jpg) no-repeat center center;
 	}
 	#img-stress{
-		background: url(images/yoga.tablet.jpg) no-repeat center center fixed;
+		background: url(images/yoga.tablet.jpg) no-repeat center center;
 	}
 }
 
