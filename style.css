@@ -81,8 +81,8 @@ li{
 	margin: 0 2.5%;
 	padding: 1em;
 	background: #259014;
-	opacity: .7;
-	filter: alpha(opacity=70);
+	opacity: .8;
+	filter: alpha(opacity=80);
 }
 	.section-text p, .section-text h2{
 		color: #fff;
@@ -204,7 +204,7 @@ h2{
 	}
 
 	body{
-		font-size: 60%;
+		font-size: 70%;
 	}
 
 	a.button{
@@ -216,7 +216,7 @@ h2{
 	}
 
 	.img-section{
-		height: 30%;
+		height: 45%;
 	}
 
 	#img-nutrition{
