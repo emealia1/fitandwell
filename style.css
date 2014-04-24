@@ -16,6 +16,16 @@ nav select{
 	display: none;
 }
 
+#logo{
+	margin: 1em;
+	position: relative;
+	background: url(images/fitlogo.png) no-repeat;
+	background-size: 100% 100%;
+	width: 288px;
+	height: 72px;
+	display: inline-block;
+}
+
 .hght-header{
 	height: 252px;
 }
@@ -34,10 +44,10 @@ nav select{
 #topsection{
 	display: block;
 	position: relative;
-	height: 40%;
 	/*height: 20.5em;*/
+	min-height: 20.5em;
 	width: 100%;
-	margin: 0 1em 1em;
+	margin: 0 0 1em;
 }
 	#top-wrapper{
 		position: absolute;
@@ -46,10 +56,13 @@ nav select{
 	#topimg{
 		display: inline-block;
 		float: left;
+		/*height: 90%;*/
+		width: auto;
+		padding-left: 1em;
 	}
 	#topinfo{
 		display: inline-block;
-		float: left;
+		float: right;
 		position: absolute;
 		padding: 1em;
 	}
@@ -77,7 +90,6 @@ li{
 		color: #fff;
 		font-weight:bold;
 	}
-	
 
 h1{
 	font-size: 2.5em;
@@ -96,7 +108,7 @@ h2{
 	font-size: 1.5em;
 }
 .img-section{
-	height: 40%;
+	height: 45%;
 	width: 100%;
 }
 
@@ -109,7 +121,7 @@ h2{
   	background-size: cover;
 }
 #img-exercise{
-	background: url(images/exercise.jpg) no-repeat center center fixed;
+	background: url(images/exercise-bike.jpg) no-repeat center center fixed;
 	width: 100%;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -150,7 +162,7 @@ h2{
 
 	#logo{
 		background: url(images/fit-logo-wht.png) no-repeat;
-		background-size: auto 80%;
+		background-size: auto 85%;
 		height: 90%;
 		width: 90%;
 		margin: 0 1em;
@@ -184,14 +196,15 @@ h2{
 
   	#topsection{
   		margin-top: 7%;
+  		height: 35em;
   	}
 
-  	#topimg{
-  		width: 175px
-  	}
+  	#topinfo{
+  		position: relative;
+	}
 
 	.hght-header{
-		height: 70%;
+		height: 80%;
 	}
 
 	body{
@@ -217,10 +230,7 @@ h2{
 	}
 }	
 
-@media only screen and (min-width: 768px) and (max-width: 920px){
-	.img-size{
-  		width: 30%;
-  	}
+@media only screen and (min-width: 768px) and (max-width: 930px){
 
 	#logo{
 		background: url(images/fit-logo-wht.png) no-repeat;
