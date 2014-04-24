@@ -56,7 +56,6 @@ nav select{
 	#topimg{
 		display: inline-block;
 		float: left;
-		/*height: 90%;*/
 		width: auto;
 		padding-left: 1em;
 	}
@@ -84,7 +83,6 @@ li{
 	background: #259014;
 	opacity: .7;
 	filter: alpha(opacity=70);
-
 }
 	.section-text p, .section-text h2{
 		color: #fff;
@@ -108,12 +106,12 @@ h2{
 	font-size: 1.5em;
 }
 .img-section{
-	height: 45%;
+	height: 40%;
 	width: 100%;
 }
 
 #img-nutrition{
-	background: url(images/food-Healthy-Eating.jpg) no-repeat center center fixed;
+	background: url(images/food-nutrition.jpg) no-repeat center center fixed;
 	width: 100%;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -156,8 +154,6 @@ h2{
 	cursor: pointer;
 }	
 
-
-
 @media only screen and (max-width: 767px) {
 
 	#logo{
@@ -196,7 +192,7 @@ h2{
 
   	#topsection{
   		margin-top: 7%;
-  		height: 35em;
+  		height: 47em;
   	}
 
   	#topinfo{
@@ -219,18 +215,22 @@ h2{
 		width: 100%;
 	}
 
+	.img-section{
+		height: 25%;
+	}
+
 	#img-nutrition{
-		background: url(images/food-Healthy-Eating.mobile.jpg) no-repeat center center fixed;
+		background: url(images/food-nutrition.mobile.jpg) no-repeat center center fixed;
 	}
 	#img-exercise{
-		background: url(images/exercise.mobile.jpg) no-repeat center center fixed;
+		background: url(images/exercise-bike.mobile.jpg) no-repeat center center fixed;
 	}
 	#img-stress{
-		background: url(images/yoga.jpg) no-repeat center center fixed;
+		background: url(images/yoga.mobile.jpg) no-repeat center center fixed;
 	}
 }	
 
-@media only screen and (min-width: 768px) and (max-width: 930px){
+@media only screen and (min-width: 768px) and (max-width: 920px){
 
 	#logo{
 		background: url(images/fit-logo-wht.png) no-repeat;
@@ -291,13 +291,13 @@ h2{
 	}
 
 	#img-nutrition{
-		background: url(images/food-Healthy-Eating.mobile.jpg) no-repeat center center fixed;
+		background: url(images/food-nutrition.tablet.jpg) no-repeat center center fixed;
 	}
 	#img-exercise{
-		background: url(images/exercise.mobile.jpg) no-repeat center center fixed;
+		background: url(images/exercise-bike.tablet.jpg) no-repeat center center fixed;
 	}
 	#img-stress{
-		background: url(images/yoga.jpg) no-repeat center center fixed;
+		background: url(images/yoga.tablet.jpg) no-repeat center center fixed;
 	}
 }
 
