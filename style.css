@@ -268,6 +268,10 @@ h2{
   	#topsection{
   		margin-top: 6em;
   	}
+		#topsection h1{
+			line-height: 1.75em;
+		}
+
 
   	#topimg{
   		width: 250px
