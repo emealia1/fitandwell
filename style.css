@@ -153,6 +153,10 @@ h2{
 	cursor: pointer;
 }	
 
+#form h2{
+	margin-bottom: .5em;
+}
+
 @media only screen and (max-width: 767px) {
 
 	#logo{
